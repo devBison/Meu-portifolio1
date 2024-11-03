@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+
+body {
+   
+    width: 100%;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+}
+
+header{
+    background-attachment: fixed;
+    background-color: rgba(red, green, blue, alpha);
+   margin-top: 1vh;
+   height: 10vh;
+   
+
+}
+
+header ul {
+    
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    flex-direction: row;
+    height: 10vh;
+}
+
+
+header li {
+    background-attachment: fixed;
+    list-style: none;
+    
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: .5s;
+    
+}
+header li:hover{
+
+    transform: scale(1.2);
+    
+    transition: .5s;}
+
+    header li:hover a { color: rgb(255, 255, 255);}
+
+li>a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+
+}
+
+li span{
+  font-size: 40px;
+  height:500px;
+}
+
+
+}
+#contat{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contat h1{
+    font-size: 3.5em;
+    color: white;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1;
+}
+
+#contat span{
+    color: #12FF8D;
+}
+.formularioContato { 
+    
+    
+ 
+    max-width:500px; 
+    height:auto; 
+    float:none; 
+    margin:auto; 
+    padding:1em; 
+    margin-bottom:1em; 
+    border-radius:6px; 
+    background:#fff4f4b8; 
+    box-shadow: 1px 0px 1.2px 0px #ffffff; 
+    position:relative; 
+}
+.formularioContato:before { 
+    width:0; 
+    height:0; 
+    border:15px solid transparent; 
+    border-bottom-color:#6f6f6f; 
+    content:""; 
+    position:absolute; 
+    left:6%; 
+    top:-4.5%; 
+    margin-top:-4px; 
+    margin-left:6px; 
+    z-index:2;
+}
+.formularioContato label  { display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float:left; 
+    width:100%; 
+    margin-bottom:2em; 
+}
+.formularioContato label span {
+    
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    margin-bottom: 6px;
+    font-family:'open_sansregular'; 
+}
+.formularioContato label input  { 
+    font-size:1em; 
+    color:#ffffff; 
+    font-family:'open_sansregular'; 
+    outline:none; 
+    border:1.5px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    transition: 0.3s;  
+}
+.formularioContato label select { 
+    font-size:1em; 
+    color:#fdfdfd; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none; 
+    transition: 0.3s;  
+}
+.formularioContato label textarea { 
+    font-size:1em; 
+    color:#555; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none;
+    transition: 0.3s;   
+}
+.formularioContato label input:focus    { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px #12FF8D solid; color:#000000);}
+.formularioContato label select:focus   { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px #12FF8D solid; }
+.formularioContato label textarea:focus { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px #12FF8D solid; color:#000000;}
+.formularioContato button.btn-envia { 
+    background-color:#12ff81a7; 
+    width:100%; display:block; 
+    margin:auto; cursor:pointer; 
+    border-radius:4px;  
+    border:0; 
+    padding:0.8em 0em; 
+    color:#fff; 
+    font-size:1.3em; 
+    font-family:'open_sansbold'; 
+    text-align: center;
+    transition: 0.3s;   
+}
+.formularioContato button.btn-envia:hover { 
+    background-color: #12FF8D; 
+}
+
+#rodape{
+    background-color: #ffffff8a;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #copy{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #icon svg{
+    height: 17px;
+    fill: black;
+    position: static;
+    margin-left: 2vh;
+  
+  }
+  #icon{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  body.light-mode {
+    background-image: url(fundobrancss.png);
+    color: black;
+  }
+  
+  body.dark-mode {
+    background-image: url(fundotozera.png);
+    color: rgb(0, 0, 0);
+  }
+  
+
+  #toggleButton {
+    border: #E7D974;
+    position: relative; /* Fixa o botão em uma posição específica */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    background-color:  #12FF8D; ; /* Cor do botão em modo claro */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s;
+  }
+  
+  #toggleButton:hover {
+    background-color: #ffffff; /* Cor do botão ao passar o mouse */
+  }
+  
